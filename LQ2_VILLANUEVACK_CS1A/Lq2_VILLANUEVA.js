@@ -83,16 +83,16 @@ let classRole = prompt("Enter your Class Role (Officer, Student, Teacher):");
 let course = prompt("Enter your Course (BSCS, BSM, BAEL):");
 
 
-// Calculate the number of iterations (1/4 of Age input)
+//This line calculate the number of iterations (1/4 of Age input)
 let iterations = parseInt(Age / 4); 
 
-// Conditional statement for Course
+// Course conditional statement 
 if (course === "BSCS" || course === "BSM" || course === "BAEL") {
     
-    // Conditional statement for Class Role
+    // Class role conditional statement 
     if (classRole === "Officer" || classRole === "Student" || classRole === "Teacher") {
         
-        // Loop statement to print name based on 1/4 of Age
+        // A Loop statement that print's name based on 1/4 of Age
         for (let i = 0; i < iterations; i++) {
             console.log("Iteration " + (i + 1) + ": " + name);
         }
